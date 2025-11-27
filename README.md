@@ -13,7 +13,7 @@ Currently, it includes a **Calculator App** built using Python’s Tkinter libra
 - Demonstrates event-driven programming and widget layout management with Tkinter’s grid system.  
 
 - Used Copilot to generate code for an **interactive hex pathfinding visualiser** with pygame.  
-- Inspired by a pathfinding visualisation tool I originally created in **Unity with C#** with over 200 pages of documentation.
+- Inspired by a pathfinding visualisation tool I originally created in **Unity using C#**, with over 200 pages of documentation.
 - Python implementation was fully **AI-generated** and adapted for this project based on my C# implementation.
 - Implements A* search, Dijkstra’s algorithm, and Depth‑First Search (DFS).  
 - Provides real-time visualization of algorithm progress on a hexagonal grid.  
