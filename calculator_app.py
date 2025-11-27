@@ -121,7 +121,7 @@ button_add = Button(root, text="+", padx=40, pady=20, command=lambda: operator_b
 button_subtract = Button(root, text="-", padx=42, pady=20 , command=lambda: operator_button_click("-"))
 button_multiply = Button(root, text="×", padx=40, pady=20 , command=lambda: operator_button_click("×"))
 button_divide = Button(root, text="÷", padx=40, pady=20, command=lambda: operator_button_click("÷"))
-button_equal = Button(root, text="=", padx=90, pady=20, command=lambda: operator_button_click("="))
+button_equal = Button(root, text="=", padx=90, pady=20, command=lambda: operator_button_click("="), bg = "blue", fg = "white")
 button_clear = Button(root, text="Clear", padx=77, pady=20, command=reset_calculation)
 button_negate = Button(root, text="+/-", padx=34, pady=20, command=toggle_negate)
 button_decimal = Button(root, text=".", padx=42, pady=20, command=add_decimal)
