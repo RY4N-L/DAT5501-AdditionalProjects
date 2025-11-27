@@ -1,7 +1,9 @@
 # DAT5501 Additional Projects
 
 This repository contains additional projects for the DAT5501 module portfolio.  
-Currently, it includes a **Calculator App** built using Python’s Tkinter library and a **Hex Pathfinding Visualiser** built with pygame using Copilot AI.
+Currently, it includes a **Calculator App** built using Python’s Tkinter library and a **Hex Pathfinding Visualiser** built with pygame.  
+  
+  PLEASE NOTE: The **Hex Pathfinding Visualiser** is currently fully AI-generated (using Copilot AI) and adapted for this project based on my original C# implementation.
 
 ---
 
@@ -14,7 +16,6 @@ Currently, it includes a **Calculator App** built using Python’s Tkinter libra
 
 - Used Copilot to generate code for an **interactive hex pathfinding visualiser** with pygame.  
 - Inspired by a pathfinding visualisation tool I originally created in **Unity using C#**, with over 200 pages of documentation.
-- Python implementation was fully **AI-generated** and adapted for this project based on my C# implementation.
 - Implements A* search, Dijkstra’s algorithm, and Depth‑First Search (DFS).  
 - Provides real-time visualization of algorithm progress on a hexagonal grid.  
 - Includes intuitive controls: mouse clicks to set start/end or toggle walls, keyboard shortcuts to run/reset algorithms.  
@@ -24,7 +25,7 @@ Currently, it includes a **Calculator App** built using Python’s Tkinter libra
 ## 📂 Folder Structure
 
 - `calculator_app.py` – main application file containing all logic and GUI components for calculator.  
-- `hex_pathfinder_visualisation.py` – interactive pathfinding visualizer using hexagonal grids (pygame).  
+- `hex_pathfinder_visualisation.py` – interactive pathfinding visualiser using hexagonal grids (pygame).  
 
 ---
 
