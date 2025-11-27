@@ -7,7 +7,7 @@ Currently, it includes a **Calculator App** built using Python’s Tkinter libra
 
 ---
 
-## 🌟 Highlights
+## Highlights
 
 - Developed a **GUI calculator** with Tkinter.  
 - Supports basic arithmetic operations: addition, subtraction, multiplication, division.  
@@ -22,7 +22,7 @@ Currently, it includes a **Calculator App** built using Python’s Tkinter libra
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 - `calculator_app.py` – main application file containing all logic and GUI components for calculator.  
 - `hex_pathfinder_visualisation.py` – interactive pathfinding visualiser using hexagonal grids (pygame).  
@@ -42,7 +42,7 @@ pip install pygame
 
 ---
 
-## 🚀 How to Run
+## How to Run
 Clone the repository:
 ``` bash
 git clone https://github.com/RY4N-L/DAT5501-additional-projects.git
@@ -58,7 +58,7 @@ python hex_pathfinder_visualisation.py
 ```
 
 ---
-## 📝 Outstanding Tasks / To‑Do
+## Outstanding Tasks / To‑Do
 - [ ] Add support for advanced operations (square root, exponentiation) in the calculator.
 - [ ] Improve calculator GUI styling (fonts, colors, button layout).
 - [ ] Add keyboard input support for calculator.
