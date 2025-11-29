@@ -1,3 +1,6 @@
+## Hex Pathfinder Visualisation built with Pygame ##
+## CODE HAS BEEN GENERATED USING COPILOT AI ## 
+
 import math
 import sys
 import pygame

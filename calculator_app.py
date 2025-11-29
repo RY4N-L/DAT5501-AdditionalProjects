@@ -1,3 +1,5 @@
+## Additional calculator app project with Tkinter GUI ## 
+
 from tkinter import *
 
 # Create the main application window
@@ -9,6 +11,15 @@ previous_operator = ""
 
 # Functions for button actions
 def number_button_click(number):
+    """
+    Handle number button clicks in the calculator.
+
+    Parameters:
+    number (int): The digit pressed by the user.
+
+    Returns:
+    None
+    """
     global previous_operator
     if previous_operator == "=" or calc_entry.get() == "Math Error":
         reset_calculation()
@@ -19,10 +30,27 @@ def number_button_click(number):
     calc_entry.insert(0, str(current_number) + str(number))
 
 def clear_entry():
-    # Clear the entry field
+    """
+    Clear the calculator entry field.
+
+    Parameters:
+    None
+
+    Returns:
+    None
+    """
     calc_entry.delete(0, END)
     
 def reset_calculation():
+    """
+    Reset the calculator state, clearing the entry field and resetting temporary calculation values and operator history.
+
+    Parameters:
+    None
+
+    Returns:
+    None
+    """
     global temp_calc
     global previous_operator
     clear_entry()
@@ -31,7 +59,15 @@ def reset_calculation():
     previous_operator = ""
 
 def get_current_entry():
+    """
+    Retrieve the current value from the calculator entry field. Handles 'Math Error' by resetting the calculator state.
 
+    Parameters:
+    None
+
+    Returns:
+    float or str: The numeric value in the entry field as a float, or an empty string if the field is empty or invalid.
+    """
     if calc_entry.get() == "Math Error":
         reset_calculation()
         return ""
@@ -43,6 +79,18 @@ def get_current_entry():
         return ""
 
 def toggle_negate():
+    """
+    Toggle the sign of the current number in the calculator entry field.
+
+    If the number is positive, it becomes negative. If negative, 
+    it becomes positive. Updates the temporary calculation if the previous operator was '='.
+
+    Parameters:
+    None
+
+    Returns:
+    None
+    """
     global previous_operator
     global temp_calc
     current_number = calc_entry.get()
@@ -61,12 +109,36 @@ def toggle_negate():
         temp_calc = float(calc_entry.get())
 
 def add_decimal():
+    """
+    Add a decimal point to the current number in the calculator entry field.
+
+    Ensures that only one decimal point is added and prevents modification if the last operator was '='.
+
+    Parameters:
+    None
+
+    Returns:
+    None
+    """
+
     current_number = calc_entry.get()
     if "." not in current_number and previous_operator != "=":
         clear_entry()
         calc_entry.insert(0, str(current_number) + ".")
 
 def operator_button_click(operator):
+    """
+    Handle operator button clicks (+, -, ×, ÷, =) in the calculator.
+    Performs the appropriate arithmetic operation based on the previous operator and updates the temporary calculation. 
+    Displays 'Math Error' if division by zero occurs.
+
+    Parameters:
+    operator (str): The operator pressed by the user ('+', '-', '×', '÷', '=').
+
+    Returns:
+    None
+    """
+
     global previous_operator 
     global temp_calc
     
